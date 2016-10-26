@@ -1,0 +1,1 @@
+proot -b $HOME/nix_data:/nix bash -c "source ~/.nix-profile/etc/profile.d/nix.sh; exec $(printf " %q" "$@")"
