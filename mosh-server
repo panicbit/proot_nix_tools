@@ -1,0 +1,4 @@
+#!/bin/bash
+source .profile
+exec 3< <(with-nix bash -c "mosh-server $@")
+grep -m 1 CONNECT <&3
